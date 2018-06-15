@@ -37,11 +37,11 @@
             this.saveconvertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -74,30 +74,35 @@
             this.pastetxtToolStripMenuItem.Name = "pastetxtToolStripMenuItem";
             this.pastetxtToolStripMenuItem.Size = new System.Drawing.Size(69, 21);
             this.pastetxtToolStripMenuItem.Text = "paste.txt";
+            this.pastetxtToolStripMenuItem.Click += new System.EventHandler(this.pastetxtToolStripMenuItem_Click);
             // 
             // pasteappendToolStripMenuItem
             // 
             this.pasteappendToolStripMenuItem.Name = "pasteappendToolStripMenuItem";
             this.pasteappendToolStripMenuItem.Size = new System.Drawing.Size(100, 21);
             this.pasteappendToolStripMenuItem.Text = "paste.append";
+            this.pasteappendToolStripMenuItem.Click += new System.EventHandler(this.pasteappendToolStripMenuItem_Click);
             // 
             // cleartxtToolStripMenuItem
             // 
             this.cleartxtToolStripMenuItem.Name = "cleartxtToolStripMenuItem";
             this.cleartxtToolStripMenuItem.Size = new System.Drawing.Size(65, 21);
             this.cleartxtToolStripMenuItem.Text = "clear.txt";
+            this.cleartxtToolStripMenuItem.Click += new System.EventHandler(this.cleartxtToolStripMenuItem_Click);
             // 
             // convertToolStripMenuItem
             // 
             this.convertToolStripMenuItem.Name = "convertToolStripMenuItem";
             this.convertToolStripMenuItem.Size = new System.Drawing.Size(63, 21);
             this.convertToolStripMenuItem.Text = "convert";
+            this.convertToolStripMenuItem.Click += new System.EventHandler(this.convertToolStripMenuItem_Click);
             // 
             // saveconvertToolStripMenuItem
             // 
             this.saveconvertToolStripMenuItem.Name = "saveconvertToolStripMenuItem";
             this.saveconvertToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
             this.saveconvertToolStripMenuItem.Text = "save.srt";
+            this.saveconvertToolStripMenuItem.Click += new System.EventHandler(this.saveconvertToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -124,6 +129,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "txt";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.EnableAutoDragDrop = true;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(770, 505);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
             // tabPage2
             // 
@@ -158,16 +173,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.EnableAutoDragDrop = true;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(770, 505);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
