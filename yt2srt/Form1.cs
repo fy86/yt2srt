@@ -15,6 +15,7 @@ namespace yt2srt
         public string strFnameEn;
         public string strFnameEnus;
         public string strFnameTxt;
+
         int nSaveTxt = 1;// default save txt file
         int hh, mm, ss, mm0, ss0;
         int hh1 = -1, mm1 = 0, ss1 = 0;
@@ -118,6 +119,9 @@ namespace yt2srt
 
             string[] lines = richTextBox1.Text.Split(new[] { '\n', '\r' });
 
+            richTextBox2.Text = "";
+            richTextBox3.Text = "";
+            richTextBox4.Text = "";
             foreach (string line in lines)
             {
                 if (line.Length == 0) continue;
@@ -133,11 +137,15 @@ namespace yt2srt
                         fen.WriteLine(strTxt);
                         fen.WriteLine("");
 
+                        richTextBox2.Text += sn.ToString() + "\n" + strTime + "\n" + strTxt + "\n\n";
+
                         fus.WriteLine(sn.ToString());
                         fus.WriteLine(strTime);
                         fus.WriteLine(strTime2);
                         fus.WriteLine(strTxt);
                         fus.WriteLine("");
+
+                        richTextBox3.Text += sn.ToString() + "\n" + strTime + "\n"+ strTime2 +"\n" + strTxt + "\n\n";
 
                         sn++;
                     }
